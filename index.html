@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
-    .hay{
-        width : 300px ;
-        height: 400px;
-        background-color: aqua;
-        box-shadow: 25px;
-        font-size: xx-small;
+  </head>
+  <style>
+    .hay {
+      display: flex;
     }
-    @media (orientation : portrait) {
-        .hay{
-            background-color: blueviolet;
-            font-size: xx-large;
-        }
+    @media ( width <= 700px) {
+      .hay {
+        display: flex;
+        flex-direction: column;
+      }
     }
-
-</style>
-<body>
-    <div class="hay">Hello</div>
-</body>
+    .bye {
+      width: 800px;
+      height: 500px;
+      background-color: coral;
+      margin: 5px;
+      border: black 10px solid;
+    }
+  </style>
+  <body>
+    <div class="hay">
+      <div class="bye"></div>
+      <div class="bye"></div>
+      <div class="bye"></div>
+      <div class="bye"></div>
+      <div class="bye"></div>
+      <div class="bye"></div>
+    </div>
+  </body>
 </html>
